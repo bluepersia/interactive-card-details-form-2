@@ -10,3 +10,20 @@
     font-size: .75rem;
 }
 
+.btn 
+{
+    font-family: inherit;
+    background-color: $color-DeepViolet;
+    color:$color-White;
+    padding: .83em 0;
+    border-radius: 8px;
+    border:none;
+    transition: all 300ms;
+    cursor: pointer;
+
+    &:hover
+    {
+        transform: scale(1.1);
+        filter: brightness(120%);
+    }
+}

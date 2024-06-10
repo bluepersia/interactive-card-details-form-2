@@ -3,6 +3,8 @@
 .main
 {
     padding: 5.68em 6.4%;
+
+    
 }
 
 
@@ -91,25 +93,37 @@
 
     &__btn 
     {
-        @extend .heading-l;
+        @extend .btn;
         grid-column: 1 / -1;
-        font-family: inherit;
-        background-color: $color-DeepViolet;
-        color:$color-White;
-        padding: .83em 0;
-        border-radius: 8px;
-        border:none;
-        transition: all 300ms;
-        cursor: pointer;
-
-        &:hover
-        {
-            transform: scale(1.1);
-            filter: brightness(120%);
-        }
     }
 }
 
+
+.thanks {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &__title 
+    {
+        text-transform: uppercase;
+        font-size: 1.75rem;
+        letter-spacing: .12em;
+    }
+
+    &__body
+    {
+        @extend .heading-l;
+        color: $color-PurpleGrey;
+    }
+
+    &__btn
+    {
+        @extend .btn;
+        width: 100%;
+        margin-top: 3em;
+    }
+}
 
 @media (min-width:1440px)
 {
