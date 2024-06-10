@@ -19,36 +19,49 @@
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <header class="header">
+    <div class="card header__card-1">
+      <img src="./images/card-logo.svg" alt="Logo" class="card__logo"/>
+      <h2 class="card__number">9591 6489 6389 101E</h2>
+      <div class="card__footer">
+        <h3 class="card__name">felicia leire</h3>
+        <h3 class="card__date">09/00</h3>
+      </div>
+    </div>
 
-  000
+    <div class="card header__card-2">
+      <h3 class="card__secret-num">000</h3>
+    </div>
+  </header>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+  <main class="main">
+    <form class="card-form">
+      <div class="card-form__input-container">
+        <label class="card-form__input-label" for="card-form__name">Cardholder Name</label>
+        <input type="text" id="card-form__name" class="card-form__input" placeholder="e.g. Jane Appleseed" data-required="true"/>
+        <p class="card-form__input-error">Is required</p>
+      </div>
+      <div class="card-form__input-container">
+        <label class="card-form__input-label" for="card-form__number">Card Number</label>
+        <input type="text" id="card-form__number" class="card-form__input" placeholder="e.g. 1234 5678 9123 0000" data-required="true" data-number="true"/>
+        <p class="card-form__input-error">Only numbers are allowed</p>
+      </div>
+      <div class="card-form__input-container">
+        <label class="card-form__input-label" for="card-form__month">Exp. Date (MM/YY)</label>
+        <div class="card-form__date">
+          <input type="text" id="card-form__month" class="card-form__input" placeholder="MM" data-required="true" data-number="true"/>
+          <input type="text" id="card-form__year" class="card-form__input" placeholder="MM" data-required="true" data-number="true"/>
+        </div>
+        <p class="card-form__input-error">Is required</p>
+      </div>
+      <div class="card-form__input-container">
+        <label class="card-form__input-label" for="card-form__cvc">CVC</label>
+        <input type="text" id="card-form__cvc" class="card-form__input" placeholder="e.g. 123" data-required="true" data-number="true"/>
+        <p class="card-form__input-error">Only numbers are allowed</p>
+      </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <button type="submit" class="card-form__btn">Confirm</button>
+    </form>
+  </main>
 </body>
 </html>
