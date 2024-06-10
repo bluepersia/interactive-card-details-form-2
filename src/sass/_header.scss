@@ -1,0 +1,157 @@
+
+
+.header 
+{
+    background-image: url(../../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 240px;
+
+    &__card-1
+    {
+        background: url(../../images/bg-card-front.png);
+        position: absolute;
+        bottom: 0px;
+        left:50%;
+        transform: translate(-63%, 30%);
+        z-index: 1;
+    }
+
+    &__card-2 
+    {
+        background: url(../../images/bg-card-back.png);
+        position: absolute;
+        bottom: 0px;
+        right: 50%;
+        transform: translate(63%, -25%);
+        z-index: 0;
+    }
+}
+
+
+
+
+.card
+{
+    width: 286px;
+    height: 157px;
+    padding:1.09em 1.18em;
+    border-radius: 6px;
+    color: $color-White;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-size: cover;
+
+    &-s 
+    {
+        font-size: .56rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+    }
+
+    &__logo
+    {
+        width: 54px;
+        height: 30px;
+    }
+    &__number 
+    {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-top: auto;
+        margin-bottom: .94em;
+        letter-spacing: .12em;
+    }
+
+    &__footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name 
+    {
+        @extend .card-s;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__date 
+    {
+        @extend .card-s;
+        margin-top: 0;
+    }
+
+    &__secret-num 
+    {
+        margin-top: 6em;
+        margin-right: 2em;
+        margin-left: auto;
+        @extend .card-s;
+    }
+}
+
+
+
+
+@media (min-width:768px)
+{
+    .header {
+        width: 483px;
+        height: 100vh;
+
+        &__card-1
+         {
+            bottom: auto;
+            left:auto;
+            right:0px;
+            transform: translate(30%, 0%);
+            top:11em;
+         }
+         &__card-2
+         {
+            bottom: auto;
+            left:auto;
+            right:0px;
+            transform: translate(45%, 0%);
+            top:29em;
+         }
+    }
+
+
+    .card 
+    {
+        width: 447px;
+        height: 245px;
+
+        &-s
+        {
+            font-size: .875rem;
+            letter-spacing: .14em;
+        }
+
+        &__logo
+        {
+            width: 84px;
+            height: 47px;
+        }
+
+        &__number 
+        {
+            font-size: 1.75rem;
+            letter-spacing: .122em;
+        }
+
+        &__secret-num 
+        {
+            margin-top: 6.7em;
+            margin-right: 2.5em;
+        }
+
+        
+    }
+}
