@@ -1,0 +1,26 @@
+$color-DeepViolet: #21092F;
+$color-PurpleGrey: #8F8694;
+$color-LightGrey: #DFDEE0;
+$color-White:white;
+$color-Red: #FF5050;
+$color-Gradient: linear-gradient(135deg, #6348FE, #610595);
+
+body 
+{
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child
+{
+    margin-top: 0;
+}
+
+* :last-child
+{
+    margin-bottom: 0;
+}
