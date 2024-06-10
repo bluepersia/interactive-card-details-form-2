@@ -20,12 +20,27 @@ body {
     display: flex;
   }
 }
-.heading-l, .card-form__btn, .card-form__input {
+.heading-l, .thanks__body, .card-form__input {
   font-size: 1.125rem;
 }
 
 .body-m, .card-form__input-error, .card-form__input-label {
   font-size: 0.75rem;
+}
+
+.btn, .thanks__btn, .card-form__btn {
+  font-family: inherit;
+  background-color: #21092F;
+  color: white;
+  padding: 0.83em 0;
+  border-radius: 8px;
+  border: none;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.btn:hover, .thanks__btn:hover, .card-form__btn:hover {
+  transform: scale(1.1);
+  filter: brightness(120%);
 }
 
 .header {
@@ -201,18 +216,24 @@ body {
 }
 .card-form__btn {
   grid-column: 1/-1;
-  font-family: inherit;
-  background-color: #21092F;
-  color: white;
-  padding: 0.83em 0;
-  border-radius: 8px;
-  border: none;
-  transition: all 300ms;
-  cursor: pointer;
 }
-.card-form__btn:hover {
-  transform: scale(1.1);
-  filter: brightness(120%);
+
+.thanks {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.thanks__title {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  letter-spacing: 0.12em;
+}
+.thanks__body {
+  color: #8F8694;
+}
+.thanks__btn {
+  width: 100%;
+  margin-top: 3em;
 }
 
 @media (min-width: 1440px) {

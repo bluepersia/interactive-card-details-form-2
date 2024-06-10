@@ -49,8 +49,8 @@
       <div class="card-form__input-container card-form__date-container">
         <label class="card-form__input-label" for="card-form__month">Exp. Date (MM/YY)</label>
         <div class="card-form__date">
-          <input type="text" id="card-form__month" class="card-form__input" placeholder="MM" data-required="true" data-number="true"/>
-          <input type="text" id="card-form__year" class="card-form__input" placeholder="MM" data-required="true" data-number="true"/>
+          <input type="text" id="card-form__month" class="card-form__input card-form__input-date" placeholder="MM" data-required="true" data-number="true" data-min="1" data-max="12"/>
+          <input type="text" id="card-form__year" class="card-form__input card-form__input-date" placeholder="MM" data-required="true" data-number="true"/>
         </div>
         <p class="card-form__input-error">Is required</p>
       </div>
@@ -63,5 +63,7 @@
       <button type="submit" class="card-form__btn">Confirm</button>
     </form>
   </main>
+
+  <script src="./src/js/app.js"></script>
 </body>
 </html>
