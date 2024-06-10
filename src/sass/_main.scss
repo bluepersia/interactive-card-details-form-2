@@ -1,0 +1,123 @@
+
+
+.main
+{
+    padding: 5.68em 6.4%;
+}
+
+
+.card-form 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .68em;
+    row-gap: 1.25em;
+    max-width: 381px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__input 
+    {
+        @extend .heading-l;
+        border:solid 1px $color-LightGrey;
+        border-radius: 8px;
+        padding: .61em .88em;
+        width: 100%;
+        &-container 
+        {
+            display: flex;
+            flex-direction: column;
+            &.invalid .card-form__input-error
+            {
+                display: block;
+            }
+
+            &.invalid .card-form__input
+            {
+                border-color: $color-Red;;
+            }
+        }
+
+        &-label 
+        {
+            @extend .body-m;
+            margin-bottom: .75em;
+            letter-spacing: .16em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        &-error 
+        {
+            @extend .body-m;
+            margin-top: .6em;
+            color: $color-Red;
+            display: none;
+        }
+    }
+  
+
+
+    &__name-container 
+    {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+
+    &__number-container 
+    {
+        grid-column: 1 / -1;
+        grid-row: 2/  3;
+    }
+
+    &__date-container 
+    {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    &__cvc-container 
+    {
+        grid-column: 2 / -1;
+        grid-row: 3 / 4;
+    }
+
+    &__date 
+    {
+        display: flex;
+        column-gap: .625em;
+    }
+
+    &__btn 
+    {
+        @extend .heading-l;
+        grid-column: 1 / -1;
+        font-family: inherit;
+        background-color: $color-DeepViolet;
+        color:$color-White;
+        padding: .83em 0;
+        border-radius: 8px;
+        border:none;
+        transition: all 300ms;
+        cursor: pointer;
+
+        &:hover
+        {
+            transform: scale(1.1);
+            filter: brightness(120%);
+        }
+    }
+}
+
+
+@media (min-width:1440px)
+{
+    .main 
+    {
+        width: 66%;
+        display: flex;
+        align-items: center;
+    }
+
+}
